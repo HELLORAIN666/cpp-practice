@@ -18,7 +18,8 @@ Practice code for an undergraduate C++ course, focused on **classes, encapsulati
 | `4.2.cpp` | **对象生命周期**：无参构造、有参构造、析构函数、拷贝构造；三种初始化写法（括号法 / 显示法 / 隐式转换法） |
 | `T10_Library.cpp` | **T10 图书管理系统**：`Book` + `Library` 两个类，用 `vector` 做增删改查与排序，实践单一职责原则与封装 |
 | `t1.cpp` | 基础练习：整数除法与类型转换（元角换算） |
-| `4.2.2.cpp`、`t10.cpp` | 学习过程中留下的草稿，未完成 |
+
+> 早期留下的两个未完成草稿（`4.2.2.cpp`、`t10.cpp`）已清理，内容仍保留在 git 历史中。
 
 ## 一些笔记
 
