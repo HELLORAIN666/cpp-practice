@@ -1,37 +1,34 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-#include<string>
+#include <string>
 
 class Person
 {
 public:
-
     Person()
     {
-        cout<<"Person的无参构造函数的调用"<<endl;
+        cout << "Person的无参构造函数的调用" << endl;
     }
-public:    
+
+public:
     Person(int a)
     {
         age = a;
-        cout<<"Person的有参构造函数的调用"<<endl;
+        cout << "Person的有参构造函数的调用" << endl;
     }
 
     ~Person()
     {
-        cout<<"Person的析构函数的调用"<<endl;
+        cout << "Person的析构函数的调用" << endl;
     }
 
     //拷贝构造函数
-   Person(const Person& p)
-   {
-    age = p.age;
-    cout<<"拷贝构造函数的调用"<<endl;
-    
-   }
+    Person(const Person &p)
+    {
+        age = p.age;
+        cout << "拷贝构造函数的调用" << endl;
+    }
     int age;
-
-
 };
 
 void test01()
@@ -53,13 +50,9 @@ void test01()
     //Person(10);匿名对象 当前执行结束后，系统立即回收
     //cout<<"aaaa"<<endl;
 
-
-
     //隐式转换法
-    Person p4 = 10;//相当于Person p4 = Person（10）；
-    Person p5 = p4;//拷贝构造
-
-
+    Person p4 = 10; //相当于Person p4 = Person（10）；
+    Person p5 = p4; //拷贝构造
 }
 
 int main()
